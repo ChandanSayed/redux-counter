@@ -1,15 +1,19 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
 import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div>
-      <h1>Redux Counter!!</h1>
-    </div>
+    <>
+      <div className="container text-center">
+        <h1>Redux Counter!!</h1>
+        <div className="quantity">
+          <div className="flex justify-center">
+            <button>Decrement</button>
+            <input type="number" value={'0'} />
+            <button>Decrement</button>
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
 
