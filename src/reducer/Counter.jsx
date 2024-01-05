@@ -6,6 +6,9 @@ const changeNumber = (state = initialState, action) => {
       return state + 1;
 
     case 'DECREMENT':
+      if (state < 1) {
+        return state;
+      }
       return state - 1;
 
     default:
